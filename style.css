@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+/*--------------------------parallax--------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+.parallax {
+  padding: 0;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.page1 {
+  background-image: url("img/BLOG-Lokasi-asli-Film-Suzume-Akashi-kaikyo-bridge-1.jpg");
+}
+.page2 {
+  background-image: url("img/BLOG-Lokasi-asli-film-Suzume-Brazilian-Park-Washuzan-Highland-1.jpg");
+}
+.page3 {
+  background-image: url("img/BLOG-Lokasi-asli-Film-Suzume-Ochanomizu-bridge-1.jpg");
+}
+.page4 {
+  background-image: url("img/BLOG-Lokasi-asli-Film-Suzume-Oyakaigan-1.jpg");
+}
+.page5 {
+  background-image: url("img/BLOG-Lokasi-asli-film-Suzume-Yawatahama-port-1.jpg");
+}
+.page6 {
+  background-image: url("img/BLOG-Lokasi-asli-film-Suzume-Yunohira-Onsen-1.jpg");
+}
+.parallax h1 {
+  font-size: 5rem;
+  mix-blend-mode: difference;
+  color: white;
+  line-height: 1.2;
+  padding: 1.4rem 7%;
+}
+/* Media queries */
+/* Laptop */
+@media (max-width: 1366px) {
+}
+/* Tablet */
+@media (max-width: 768px) {
+}
+/* Smartphone */
+@media (max-width: 450px) {
+  .parallax h1 {
+    font-size: 3rem;
+    mix-blend-mode: difference;
+    color: white;
+    line-height: 1.2;
+    padding: 1rem 7%;
+  }
+}

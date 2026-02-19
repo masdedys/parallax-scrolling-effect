@@ -42,6 +42,56 @@ html {
   padding: 1.4rem 7%;
   text-shadow: 7px 0px 9px #CE5937;
 }
+
+.navbar{
+            background: transparent;
+            backdrop-filter: blur(8px);
+        }
+        .navbar .nav-link{
+             mix-blend-mode: difference;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .navbar .nav-link:hover{
+            mix-blend-mode: difference;
+            font-weight: 500;
+            font-size: 18px;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .navbar .nav-underline .nav-link.active{
+            border-bottom: 2px solid white;
+            color: white;
+        }
+        .copyright-item small {
+          display: flex;
+          height: 30px;
+          padding: 0;
+          margin: 0;
+          justify-content:center;
+          align-items: center;
+        }
+        .copyright small{
+            font-size: 16px;
+        }
+        .copyright small a{
+            color: white;
+            text-decoration: none;
+        }
+        .copyright small a:hover{
+            color: lightskyblue;
+            text-decoration: none;
+        }
+        /* Hidding sections under 960px width */
+        @media screen and (max-width: 600px) {
+            /* Mengubah warna bingkai (border) tombol */
+            .navbar-toggler {
+                border-color: white !important;
+            }
+            /* Mengubah warna ikon hamburger */
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+        }}
+
 /* Media queries */
 /* Laptop */
 @media (max-width: 1366px) {

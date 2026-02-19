@@ -7,47 +7,6 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        .navbar{
-            background: transparent;
-            backdrop-filter: blur(8px);
-        }
-        .navbar .nav-link{
-             mix-blend-mode: difference;
-            font-weight: 400;
-            font-size: 18px;
-        }
-        .navbar .nav-link:hover{
-            color: yellow;
-            font-weight: 500;
-            font-size: 18px;
-        }
-        .navbar .nav-underline .nav-link.active{
-            border-bottom: 2px solid white;
-            color: white;
-        }
-        .copyright-item small {
-        display: flex;
-        height: 30px;
-        padding: 0;
-        margin: 0;
-        justify-content: space-around;
-        align-items: center;
-        }
-        .copyright small{
-            font-size: 16px;
-        }
-        /* Hidding sections under 960px width */
-        @media screen and (max-width: 600px) {
-            /* Mengubah warna bingkai (border) tombol */
-            .navbar-toggler {
-                border-color: white !important;
-            }
-            /* Mengubah warna ikon hamburger */
-            .navbar-toggler-icon {
-                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
-        }}
-    </style>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg nav-underline" style="height: 80px">
@@ -61,22 +20,22 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav ms-auto text-primary">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#page1">Place 1</a>
+                  <a class="nav-link mx-3" aria-current="page" href="#page1">Place 1</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#page2">Place 2</a>
+                  <a class="nav-link mx-3" href="#page2">Place 2</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#page3">Place 3</a>
+                  <a class="nav-link mx-3" href="#page3">Place 3</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#page4">Place 4</a>
+                  <a class="nav-link mx-3" href="#page4">Place 4</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link mx-3" href="#page5">Place 5</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#page5">Place 5</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#page6">Place 6</a>
+                  <a class="nav-link mx-3" href="#page6">Place 6</a>
                 </li>
               </ul>
         </div>
@@ -84,34 +43,41 @@
     </nav>
     <div class="container-fluid">
       <div class="row 1">
-        <div class="col parallax page1" id="page1">
+        <div class="col-md parallax page1" id="page1">
           <h1 class="title">Akashi Kaikyo bridge</h1>
         </div>
       </div>
       <div class="row 2">
-        <div class="col parallax page2" id="page2">
+        <div class="col-md parallax page2" id="page2">
           <h1>Brazilian Park Washuzan Highland</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col parallax page3" id="page3">
-          <h1>Ochanomizu bridge</h1>
+        <div class="col-md parallax page3" id="page3">
+          <h1>Ochano mizu bridge</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col parallax page4" id="page4">
+        <div class="col-md parallax page4" id="page4">
           <h1>Oyakaigan</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col parallax page5" id="page5">
-          <h1>Yawatahama port</h1>
+        <div class="col-md parallax page5" id="page5">
+          <h1>Yawata hama port</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col parallax page6" id="page6">
+        <div class="col-md parallax page6" id="page6">
           <h1>Yunohira Onsen</h1>
         </div>
+      </div>
+      <div class="copyright row bg-dark p-3">
+        <!--copyright-->
+        <div class="col-md copyright-item text-white">
+          <small>&copy; 2026&ensp;<a href="https://masdedys.github.io/"> masdedys.github.io</a> , All Rights Reserved</small>
+        </div>
+        <!--/copyright-->
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
